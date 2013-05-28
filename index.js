@@ -13,20 +13,22 @@ var has3d = require('has-translate3d');
 module.exports = translate;
 
 /**
- * Translate `el` by `(x, y)`.
+ * Translate `el` by `(x, y) units`.
  *
  * @param {Element} el
  * @param {Number} x
  * @param {Number} y
+ * @param {String} unit
  * @api public
  */
 
-function translate(el, x, y){
+function translate(el, x, y, unit) {
+  unit = unit || 'px';
   if (transform) {
     if (has3d) {
-      el.style[transform] = 'translate3d(' + x + 'px,' + y + 'px, 0)';
+      el.style[transform] = 'translate3d(' + x + unit + ',' + y + unit + ', 0)';
     } else {
-      el.style[transform] = 'translate(' + x + 'px,' + y + 'px)';
+      el.style[transform] = 'translate(' + x + unit + ',' + y + unit + ')';
     }
   } else {
     el.style.left = x;
