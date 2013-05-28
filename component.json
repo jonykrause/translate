@@ -1,6 +1,6 @@
 {
   "name": "translate",
-  "repo": "component/translate",
+  "repo": "jonykrause/translate@flexible-unit",
   "description": "Hardware accelerated translations with fallback support",
   "version": "0.0.1",
   "keywords": [],
