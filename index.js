@@ -23,7 +23,7 @@ module.exports = translate;
  */
 
 function translate(el, x, y, unit) {
-  unit = unit || 'px';
+  unit || (unit = 'px');
   if (typeof transform === 'string') {
     if (has3d) {
       el.style[transform] = 'translate3d(' + x + unit + ',' + y + unit + ', 0)';
