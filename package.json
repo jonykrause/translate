@@ -1,0 +1,19 @@
+{
+  "name": "translate",
+  "version": "0.0.0",
+  "description": "Hardware accelerated translations with fallback support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonykrause/translate.git"
+  },
+  "author": "Jonathan Krause <jony@jonathan-krause.de> (http://jonykrau.se/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonykrause/translate/issues"
+  },
+  "homepage": "https://github.com/jonykrause/translate"
+}
